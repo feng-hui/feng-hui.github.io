@@ -1273,6 +1273,16 @@ a.newer-posts:hover {
   text-decoration: underline;
 }
 
+.pagination li {
+  list-style: none;
+}
+.pagination a {
+  color: #515151;
+  text-decoration: none;
+}
+.pagination a:hover {
+  text-decoration: underline;
+}
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
   width: 100%;

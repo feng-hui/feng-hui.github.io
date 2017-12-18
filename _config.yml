@@ -9,15 +9,16 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Hui Feng # add your name
 author-img: david-freeman.jpg # add your photo
-about-author: This is my intruction,you can cantact me through weibo. # add description
+about-author: Python and Django Engineer # add description
 twitter: # add your Twitter handle
 facebook: # add your Facebook handle
-github: artemsheludko # add your Github handle
+github: feng-hui # add your Github handle
 linkedin: # add your Linkedin handle
 email: capricorn1203@126.com
+weibo: capricorn1203
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier:  # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
@@ -29,7 +30,7 @@ plugins_dir:
   - jekyll-paginate
   - jemoji
 
-paginate: 8
+paginate: 3
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

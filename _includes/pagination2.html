@@ -1,0 +1,12 @@
+  <div class="pagination">
+    <ul>
+    {% if page.previous %}
+    <li class="prev pull-left"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&lt;  上一篇: {{ page.previous.title }}</a></li>
+    {% else %}
+    {% endif %}
+    {% if page.next %}
+    <li class="next pull-right"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇:{{ page.next.title }}  &gt;</a></li>
+    {% else %}
+    {% endif %}
+    </ul>
+  </div> <!-- End Pagination -->
