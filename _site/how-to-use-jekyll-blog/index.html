@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>如何搭建jekyll博客 - jekyll blog title - from feng hui</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="jekyll blog title - from feng hui" property="og:site_name">
+  
+    <meta content="如何搭建jekyll博客" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="如何搭建jekyll博客" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/how-to-use-jekyll-blog/" property="og:url">
+  
+  
+    <meta content="2017-12-18T00:00:00+08:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="/img/david-freeman.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="jekyll" property="article:tag">
+    
+    <meta content="ruby" property="article:tag">
+    
+  
+
+  
+    <meta name="twitter:card" content="如何搭建jekyll博客">
+  
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="如何搭建jekyll博客">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/how-to-use-jekyll-blog/">
+  
+  
+    <meta name="twitter:description" content="如何搭建jekyll博客">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/david-freeman.jpg">
+  
+
+	<meta name="description" content="如何搭建jekyll博客">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/david-freeman.jpg" alt="Hui Feng"></a>
+      </div>
+      <div class="author-name">Hui Feng</div>
+      <p>Python and Django Engineer</p>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+        <li class="weibo"><a href="https://weibo.com/capricorn1203/" target="_blank"><i class="fa fa-weibo"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/feng-hui" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:capricorn1203@126.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2017 &copy; Hui Feng</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">如何搭建jekyll博客</h1>
+        <div class="page-date"><span>2017, Dec 18&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <blockquote>
+  <p>主要讲述如何在windows系统上安装并运行jekyll，同时部署到github pages上，配合购买好的域名，来访问我们搭建的博客。</p>
+</blockquote>
+
+<p>windows 搭建jekyll博客</p>
+
+<p>参考链接：<a href="http://www.jianshu.com/p/27de87d4447e">http://www.jianshu.com/p/27de87d4447e</a></p>
+
+<h2 id="1下载rubyinstaller并安装">1、下载rubyinstaller并安装；</h2>
+
+<h2 id="2更改默认的source源">2、更改默认的source源；</h2>
+
+<p>首先查看当前已经添加的源</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">source</span> <span class="o">-</span><span class="n">l</span><span class="p">;</span></code></pre></figure>
+
+<p>然后移除官方源和淘宝源</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">sources</span> <span class="o">-</span><span class="n">r</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">rubygems</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span> </code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">sources</span> <span class="o">-</span><span class="n">r</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">ruby</span><span class="p">.</span><span class="nf">taobao</span><span class="p">.</span><span class="nf">org</span><span class="o">/</span> </code></pre></figure>
+
+<p>添加ruby china源</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">source</span> <span class="o">-</span><span class="n">a</span> <span class="n">http</span><span class="ss">:/</span><span class="o">/</span><span class="n">gems</span><span class="p">.</span><span class="nf">ruby</span><span class="o">-</span><span class="n">china</span><span class="p">.</span><span class="nf">org</span> </code></pre></figure>
+
+<h2 id="3安装jekyll">3、安装jekyll</h2>
+
+<p>安装依赖包：</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">bundler</span> </code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span></code></pre></figure>
+
+<h2 id="4运行博客">4、运行博客</h2>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=如何搭建jekyll博客&url=http://localhost:4000/how-to-use-jekyll-blog/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/how-to-use-jekyll-blog/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/how-to-use-jekyll-blog/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#jekyll" class="tag">&#35; jekyll</a>
+          
+            <a href="/tags#ruby" class="tag">&#35; ruby</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+    <div class="pagination">
+    <ul>
+    
+    
+    
+    
+    </ul>
+  </div> <!-- End Pagination -->
+</article> <!-- End Article Page -->
+
+
+</div>
+
+  </div>
+  
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ccc543d7e1b96c31327b3b1ffaef5d80";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> <!-- End Analytics -->
+
+</body>
+</html>
