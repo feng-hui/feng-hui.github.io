@@ -5,7 +5,6 @@ date: 2018-1-26
 description: python2和python3中除法的相同与不同
 tags: [python]
 ---
-## python2和python3中除法的相同与不同
 > python2 和 python3 中的除法是有所差别的，如果结果为小数，必须保证除数与被除数有一个为浮点数。
 
 **1、整数相除(/)**
