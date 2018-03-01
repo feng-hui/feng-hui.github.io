@@ -9,6 +9,6 @@ tags: [python]
 
 **推荐文章：主要介绍相对引入与绝对引入的区别**
 
-文章链接如下：https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae
+文章链接如下：[https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae](https://medium.com/@ramrajchandradevan/python-init-py-modular-imports-81b746e58aae)
 
 【如果打不开，那就需要vpn了，能打开的，请自动忽略】
